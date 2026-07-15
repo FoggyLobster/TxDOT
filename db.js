@@ -8,6 +8,6 @@ if (!fs.existsSync(dataPath)) {
     fs.mkdirSync(dataPath);
 }
 
-const db = new Database(path.join(dataPath, "database.sqlite"));
+const db = new database(path.join(dataPath, "database.sqlite"));
 
 module.exports = db;
